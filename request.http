@@ -1,2 +1,6 @@
 
 GET http://localhost:8080/
+###
+GET http://localhost:8080/idat/codigo
+###
+GET http://localhost:8080/idat/nombre

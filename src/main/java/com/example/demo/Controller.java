@@ -13,11 +13,11 @@ public class Controller{
         public String home(){
             return "AT75524337 - Rodrigo Elguera";
         }
-        @GetMapping(path="/codigo") 
+        @GetMapping(path="/idat/codigo") 
         public String codigo(){
             return "AT75524337";
         }
-        @GetMapping(path="/nombre") 
+        @GetMapping(path="/idat/nombre") 
         public String nombrecompleto(){
             return "Rodrigo Elguera Amado";
         }
