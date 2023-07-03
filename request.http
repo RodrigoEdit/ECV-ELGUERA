@@ -13,10 +13,10 @@ GET http://localhost:8080/api/curso/all
 
 
 ###
-POST https://{{subdominio}}.onrender.com/api/curso/nuevo HTTP/1.1
+POST http://localhost:8080/api/curso/nuevo HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
-name=Desarrollo
+nom=DesarrolloP
 &creditos=20
 
 ###
@@ -25,7 +25,7 @@ PUT http://localhost:8080/api/curso/editar HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
 id=102
-&name=Usuario Editado 3
+&nom=Usuario Editado 3
 &email=edit@gmail.com
 
 ###
@@ -33,10 +33,10 @@ id=102
 DELETE http://localhost:8080/api/curso/eliminar HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
-id=54
+id=2
 
 ###
-GET http://localhost:8080/api/get/1
-
+GET http://localhost:8080/api/curso/get/1 HTTP/1.1
 ###
+
 

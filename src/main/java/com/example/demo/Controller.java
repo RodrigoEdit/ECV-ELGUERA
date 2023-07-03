@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @RestController
-@RequestMapping(path="/") //link principal padre
+@RequestMapping(path="/") 
 public class Controller{
-    //link segundo hijo
+    
         @GetMapping(path="/") 
         public String home(){
             return "AT75524337 - Rodrigo Elguera";
