@@ -3,17 +3,17 @@
 ##########
 GET http://{{subdominio}}.onrender.com/
 ###
-GET http://localhost:8080/idat/codigo
+GET http://{{subdominio}}.onrender.com/idat/codigo
 ###
-GET http://localhost:8080/idat/nombre-completo
-
-
-###
-GET http://localhost:8080/api/curso/all
+GET http://{{subdominio}}.onrender.com/idat/nombre-completo
 
 
 ###
-POST http://localhost:8080/api/curso/nuevo HTTP/1.1
+GET http://{{subdominio}}.onrender.com/api/curso/all
+
+
+###
+POST http://{{subdominio}}.onrender.com/api/curso/nuevo HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
 nom=DesarrolloP
@@ -21,7 +21,7 @@ nom=DesarrolloP
 
 ###
 
-PUT http://localhost:8080/api/curso/editar HTTP/1.1
+PUT http://{{subdominio}}.onrender.com/api/curso/editar HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
 id=102
@@ -30,13 +30,13 @@ id=102
 
 ###
 
-DELETE http://localhost:8080/api/curso/eliminar HTTP/1.1
+DELETE http://{{subdominio}}.onrender.com/api/curso/eliminar HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
 id=2
 
 ###
-GET http://localhost:8080/api/curso/get/1 HTTP/1.1
+GET http://{{subdominio}}.onrender.com/api/curso/get/1 HTTP/1.1
 ###
 
 
