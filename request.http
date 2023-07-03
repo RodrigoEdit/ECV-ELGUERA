@@ -25,8 +25,8 @@ PUT http://localhost:8080/api/curso/editar HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
 id=102
-&nom=Usuario Editado 3
-&email=edit@gmail.com
+&nom=Comunicacion
+&creditos=400
 
 ###
 
