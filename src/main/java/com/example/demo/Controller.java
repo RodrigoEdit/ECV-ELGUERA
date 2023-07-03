@@ -9,8 +9,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RequestMapping(path="/") //link principal padre
 public class Controller{
     //link segundo hijo
-        @GetMapping(path="/mundo") 
+        @GetMapping(path="/") 
         public String home(){
             return "AT75524337 - Rodrigo Elguera";
+        }
+        @GetMapping(path="/codigo") 
+        public String codigo(){
+            return "AT75524337";
+        }
+        @GetMapping(path="/nombre") 
+        public String nombrecompleto(){
+            return "Rodrigo Elguera Amado";
         }
 }
