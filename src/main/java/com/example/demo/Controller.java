@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @RestController
-@RequestMapping(path="/") //link principal padre
+@RequestMapping(path="/") 
 public class Controller{
-    //link segundo hijo
+    
         @GetMapping(path="/") 
         public String home(){
             return "AT75524337 - Rodrigo Elguera";
@@ -17,7 +17,7 @@ public class Controller{
         public String codigo(){
             return "AT75524337";
         }
-        @GetMapping(path="/idat/nombre") 
+        @GetMapping(path="/idat/nombre-completo") 
         public String nombrecompleto(){
             return "Rodrigo Elguera Amado";
         }
