@@ -17,7 +17,7 @@ public class Controller{
         public String codigo(){
             return "AT75524337";
         }
-        @GetMapping(path="/idat/nombre") 
+        @GetMapping(path="/idat/nombre-completo") 
         public String nombrecompleto(){
             return "Rodrigo Elguera Amado";
         }

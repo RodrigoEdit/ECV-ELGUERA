@@ -24,10 +24,10 @@ public class MainController {
 
 
 	@PostMapping(path="/nuevo") // Map ONLY POST Requests
-	public @ResponseBody String addNewCurso (@RequestParam String name
+	public @ResponseBody String addNewCurso (@RequestParam String nombre
 			, @RequestParam int creditos) {
 		Curso n = new Curso();
-		n.setNombre(name);
+		n.setNombre(nombre);
 		n.setCreditos(creditos);
 		cursoRepository.save(n);
 		return "Saved";
